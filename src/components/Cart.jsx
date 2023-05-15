@@ -39,7 +39,7 @@ const Cart = () => {
                </div>
             </div>
          </div>
-         <div className="container contaner-fluid d-flex flex-column">
+         <div className="container d-flex flex-column" style={{width: '80%'}}>
             <button className='btn mt-5 border-dark'> SEGUIR COMPRANDO</button>
             <button className="btn p-5">Pagar $2500</button>
          </div>
