@@ -4,6 +4,7 @@ import BackBtn from '../shared/BackBtn'
 import ItemDetails from '../layouts/ItemDetails'
 
 const Details = () => {
+    
     return (
         <div className='container container-fluid'>
             {<NavBar />}
