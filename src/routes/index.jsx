@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from '../components/Home'
+import Home from '../pages/Home'
 import Details from '../pages/Details'
-import Cart from '../components/Cart'
+import Cart from '../pages/Cart'
 
 
 const index = () => {
