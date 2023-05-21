@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
    return (
@@ -40,7 +41,7 @@ const Cart = () => {
             </div>
          </div>
          <div className="container contaner-fluid d-flex flex-column">
-            <button className='btn mt-5 border-dark'> SEGUIR COMPRANDO</button>
+            <Link to='/' className='btn mt-5 border-dark'> SEGUIR COMPRANDO</Link>
             <button className="btn p-5">Pagar $2500</button>
          </div>
       </div>

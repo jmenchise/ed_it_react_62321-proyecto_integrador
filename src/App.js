@@ -1,15 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './components/Home';
-import Details from './pages/Details';
-import Cart from './components/Cart';
+import Index  from './routes';
 
 function App() {
   return (
     <div className="App">
-      {/* <Home/> */}
-      {/* <Details/> */}
-      <Cart/>
+      <Index/>
     </div>
   );
 }

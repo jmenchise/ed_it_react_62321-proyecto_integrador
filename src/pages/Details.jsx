@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Details = () => {
     return (
@@ -7,15 +8,15 @@ const Details = () => {
                 <nav className='navbar navbar-expand-lg navbar-light'>
                     <div className='container-fluid d-flex flex-column'>
                         <h1>MioMio</h1>
-                        <button className='btn btn-outline-dark rounded-pill'>Carrito</button>
+                        <Link to='/cart' className='btn btn-outline-dark rounded-pill'>Carrito</Link>
                     </div>
                 </nav>
             </div>
             <div className='container'>
-                <button className='btn m-5'>Volver</button>
+                <Link to='/' className='btn m-5'>Volver</Link>
             </div>
             <div className='card mt-4 mx-auto' style={{ width: '80%' }}>
-                <img src='Fotos/Anteojos/Anteojos.jpg' className='card-img-top' alt='Detailimg' />
+                <img src='/Fotos/Anteojos/Anteojos.jpg' className='card-img-top' alt='Detailimg' />
                 <div className='card-body'>
                     <h5 className='card-title'>Card title</h5>
                     <p className='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -26,7 +27,7 @@ const Details = () => {
                     <li className='list-group-item'>Precio: $1500</li>
                 </ul>
                 <div className='card-body'>
-                    <button className='btn'>Lo Quiero!</button>
+                    <Link to='/cart' className='btn'>Lo Quiero!</Link>
                 </div>
             </div>
         </div>
