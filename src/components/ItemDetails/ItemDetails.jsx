@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const ItemDetails = () => {
+const ItemDetails = (props) => {
+
+   // const { } = props;
+
+
    return (
       <div className='card mt-4 mx-auto' style={{ width: '80%' }}>
          <img src='/Fotos/Anteojos/Anteojos.jpg' className='card-img-top' alt='Detailimg' />

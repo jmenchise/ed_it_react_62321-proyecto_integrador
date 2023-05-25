@@ -1,10 +1,13 @@
 import React from 'react'
 import CartItem from '../Cart/CartItem'
 
-const CartList = () => {
+const CartList = (props) => {
+
+   // const { cart } = props;
+   
    return (
       <div>
-         {<CartItem/>}
+         {<CartItem />}
          <div className="card mt-5 text-start w-75 m-auto border-dark pt-3" style={{ borderRadius: '2em' }}>
             <h5 className="card-header bg-transparent border-0">Lorem Ipsum</h5>
             <div className="card-body">
