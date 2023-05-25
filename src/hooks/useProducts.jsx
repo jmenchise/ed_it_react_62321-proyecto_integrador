@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { axiosClient } from '../axios';
 
 
 const useProducts = () => {
-   
+
    const [products, setProducts] = useState([]);
 
    useEffect(() => {
       getAllProducts();
    }, [])
-   
-   
+
+
 
    const getAllProducts = async () => {
       try {
@@ -21,7 +21,7 @@ const useProducts = () => {
          console.log('Error al conectar con la url solicitada. Detalle: ' + error.message);
       }
    }
-   
+
    return {
       products,
    }

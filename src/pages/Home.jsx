@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import NavBar from '../components/NavBar/NavBar'
 import SearchForm from '../components/SearchForm/SearchForm'
 import ItemList from '../layouts/ItemList'
-import { Productscontext } from '../data/ProductsProvider'
+import { Productscontext } from '../data/context/ProductsProvider'
 
 const Home = () => {
 

@@ -1,5 +1,5 @@
 import React, { createContext } from 'react'
-import useProducts from '../hooks/useProducts';
+import useProducts from '../../hooks/useProducts';
 
 
 export const Productscontext = createContext();

@@ -1,6 +1,7 @@
 import axios from "axios";
+import config from "../data/config";
 
 
 export const axiosClient = axios.create({
-   baseURL: 'http://localhost:8080'
+   baseURL: config.MOCK_CONECTION_STR
 });
