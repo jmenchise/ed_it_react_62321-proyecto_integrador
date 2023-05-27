@@ -1,9 +1,9 @@
 
 import { types } from "../types/cartTypes";
 
-const cartAddItem = id => ({
+const cartAddItem = obj => ({
    type: types.ADD_ITEM,
-   payload: id
+   payload: obj
 })
 
 const cartDeleteItem = id => ({

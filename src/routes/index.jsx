@@ -4,19 +4,22 @@ import Home from '../pages/Home'
 import Details from '../pages/Details'
 import Cart from '../pages/Cart'
 import ProductsProvider from '../data/context/ProductsProvider'
-
+import { Provider } from 'react-redux'
+import store from '../redux/store';
 
 const index = () => {
    return (
-      <ProductsProvider>
+      <Provider store={store}>
          <BrowserRouter>
-            <Routes>
-               <Route path='/' element={<Home />} />
-               <Route path='/details/:id' element={<Details />} />
-               <Route path='/cart' element={<Cart />} />
-            </Routes>
+            <ProductsProvider>
+               <Routes>
+                  <Route path='/' element={<Home />} />
+                  <Route path='/details/:id' element={<Details />} />
+                  <Route path='/cart' element={<Cart />} />
+               </Routes>
+            </ProductsProvider>
          </BrowserRouter>
-      </ProductsProvider>
+      </Provider>
    )
 }
 

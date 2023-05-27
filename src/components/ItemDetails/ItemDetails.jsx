@@ -1,10 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import useCart from '../../hooks/useCart';
 
 const ItemDetails = (props) => {
 
    // const { } = props;
 
+   const testObj = {
+      id: '3',
+      size: 'S',
+      color: 'Azul'
+   }
+
+   const { addItemtoCart } = useCart();
 
    return (
       <div className='card mt-4 mx-auto' style={{ width: '80%' }}>
@@ -19,7 +26,7 @@ const ItemDetails = (props) => {
             <li className='list-group-item'>Precio: $1500</li>
          </ul>
          <div className='card-body'>
-            <Link to='/cart' className='btn'>Lo Quiero!</Link>
+            <button onClick={() => addItemtoCart(testObj)} className='btn'>Lo Quiero!</button>
          </div>
       </div>
    )

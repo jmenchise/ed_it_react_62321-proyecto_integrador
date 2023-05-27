@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Card = (props) => {
 
-   const { id, img, title, description, sizes, colors, price } = props;
+   const { id, img, title, description } = props;
 
    return (
       <Link to={`/details/${id}`} className='card bg-dark text-white mb-4'>
