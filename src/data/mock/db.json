@@ -7,15 +7,15 @@
          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere laudantium beatae et, eos minus deserunt modi, aliquid excepturi eius suscipit quasi! Suscipit corporis, laborum laudantium obcaecati sit excepturi vitae.",
          "sizes": ["S", "M"], 
          "colors": ["Rojo", "Violeta"], 
-         "price": 1500
+         "price": 2500
       },
       { 
          "id": 2, 
          "img": "/Fotos/Anteojos/apostolos-vamvouras-mKi4QEJXRCs-unsplash.jpg", 
          "title": "Anteojos 2", 
          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere laudantium beatae et, eos minus deserunt modi, aliquid excepturi eius suscipit quasi! Suscipit corporis, laborum laudantium obcaecati sit excepturi vitae.",
-         "sizes": ["S", "M"], 
-         "colors": ["Rojo", "Violeta"], 
+         "sizes": ["S", "M", "L"], 
+         "colors": ["Dorado", "Marrón"], 
          "price": 5500
       },
       { 
@@ -23,8 +23,8 @@
          "img": "/Fotos/Anteojos/noah-black-1p3N5SHz0Hk-unsplash.jpg", 
          "title": "Anteojos 3", 
          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere laudantium beatae et, eos minus deserunt modi, aliquid excepturi eius suscipit quasi! Suscipit corporis, laborum laudantium obcaecati sit excepturi vitae.",
-         "sizes": ["S", "M"], 
-         "colors": ["Rojo", "Violeta"], 
+         "sizes": ["S", "L"], 
+         "colors": ["Rojo", "Azul, Negro"], 
          "price": 1000
       }
    ]

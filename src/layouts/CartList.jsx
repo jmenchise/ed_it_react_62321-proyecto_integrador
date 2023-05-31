@@ -1,5 +1,5 @@
 import React from 'react'
-import CartItem from '../Cart/CartItem'
+import CartItem from '../components/Cart/CartItem'
 
 const CartList = (props) => {
 
@@ -7,10 +7,10 @@ const CartList = (props) => {
 
    return (
       <div>
-         {cart?.map(cartItem => (
+         {cart?.map(item => (
             <CartItem
-               key={cartItem.id}
-               {...cartItem}
+               key={item.id}
+               {...item}
             />
          ))}
       </div>

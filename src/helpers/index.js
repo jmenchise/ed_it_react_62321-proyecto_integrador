@@ -1,0 +1,1 @@
+export const itemExistInArr = (id, arr) => arr.some(item => id === item.id);
