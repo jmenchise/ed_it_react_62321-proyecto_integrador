@@ -11,15 +11,17 @@ const cartDeleteItem = id => ({
    payload: id
 })
 
-const cartAddCount = id => ({
+const cartAddCount = (id, price) => ({
    type: types.ADD_COUNT,
-   payload: id
+   payload: { id, price }
 })
 
-const cartRestCount = id => ({
+const cartRestCount = (id, price) => ({
    type: types.REST_COUNT,
-   payload: id
+   payload: { id, price }
 })
+
+
 
 export {
    cartAddItem,

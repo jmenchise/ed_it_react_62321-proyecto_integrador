@@ -9,7 +9,10 @@ export default (state = initialState, { type, payload }) => {
    switch (type) {
       case types.ADD_ITEM:
          state.cart.push({ ...payload, count: 1 })
-         return state;
+         return {
+            ...state,
+            total: Number(state.total) + payload.price
+         }
 
       case types.DELETE_ITEM:
          return {
@@ -19,26 +22,28 @@ export default (state = initialState, { type, payload }) => {
 
       case types.ADD_COUNT:
          return {
-            ... state, 
+            ...state,
             cart: state.cart.map(item => {
-               if (item.id === payload) {
+               if (item.id === payload.id) {
                   return { ...item, count: item.count + 1 }
                } else {
                   return item
                }
-            })
+            }),
+            total: Number(state.total) + payload.price
          }
 
       case types.REST_COUNT:
          return {
-            ... state, 
+            ...state,
             cart: state.cart.map(item => {
-               if (item.id === payload) {
+               if (item.id === payload.id) {
                   return { ...item, count: item.count - 1 }
                } else {
                   return item
                }
-            })
+            }),
+            total: Number(state.total) - payload.price
          }
 
       default:

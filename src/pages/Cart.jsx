@@ -5,10 +5,7 @@ import CartList from '../layouts/CartList'
 import { useSelector } from 'react-redux'
 
 const Cart = () => {
-
-   const { cart } = useSelector(state => state.cart);
-   console.log('cart:', cart);
-
+   const { cart, total } = useSelector(state => state.cart);
 
    return (
       <div className="container container-fluid">
@@ -18,7 +15,7 @@ const Cart = () => {
                <CartList cart={cart} />
                <div className="container contaner-fluid d-flex flex-column">
                   <Link to='/' className='btn mt-5 border-dark'> SEGUIR COMPRANDO</Link>
-                  <button className="btn p-5">Pagar $2500</button>
+                  <button className="btn p-5">Pagar ${total}</button>
                </div>
             </>
             :

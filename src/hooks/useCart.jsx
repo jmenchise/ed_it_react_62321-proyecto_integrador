@@ -15,10 +15,10 @@ const useCart = () => {
       navigate('/cart');
    }
 
-   const addCount = id => dispatch(cartAddCount(id))
+   const addCount = (id, price) => dispatch(cartAddCount(id, price))
 
-   const restCount = (id, count) => {
-      count === 1 ? dispatch(cartDeleteItem(id)) : dispatch(cartRestCount(id));
+   const restCount = (id, count, price) => {
+      count === 1 ? dispatch(cartDeleteItem(id)) : dispatch(cartRestCount(id, price));
    }
 
    return {
