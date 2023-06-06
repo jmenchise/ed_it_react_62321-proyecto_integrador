@@ -7,7 +7,8 @@ const useCart = () => {
 
    const navigate = useNavigate();
    const dispatch = useDispatch();
-   const cart = useSelector(state => state.cart);
+   const { cart } = useSelector(state => state.cart);
+   
 
    const addItemtoCart = obj => {
       itemExistInArr(obj.id, cart) ? addCount(obj.id) : dispatch(cartAddItem(obj));
