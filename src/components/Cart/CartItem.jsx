@@ -5,7 +5,7 @@ import useCart from '../../hooks/useCart';
 const CartItem = (props) => {
    const { id, sizes, colors, count, price, title } = props;
    const { addCount, restCount } = useCart();
-   console.log('algo para editar')
+   
    return (
       <div className="card mt-5 text-start w-75 m-auto border-dark pt-3" style={{ borderRadius: '2em' }}>
          <h5 className="card-header bg-transparent border-0">{title}</h5>
