@@ -6,9 +6,9 @@ const cartAddItem = obj => ({
    payload: obj
 })
 
-const cartDeleteItem = id => ({
+const cartDeleteItem = (id, price) => ({
    type: types.DELETE_ITEM,
-   payload: id
+   payload: { id, price }
 })
 
 const cartAddCount = (id, price) => ({

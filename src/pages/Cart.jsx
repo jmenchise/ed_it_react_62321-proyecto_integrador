@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 
 const Cart = () => {
    const { cart, total } = useSelector(state => state.cart);
-
+   
    return (
       <div className="container container-fluid">
          {<NavBar title={'Tu Compra'} />}

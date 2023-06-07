@@ -4,7 +4,6 @@ import React from 'react'
 const ItemDetails = (props) => {
    const { product, onClick } = props;
    const {
-      id,
       sizes,
       colors,
       price,

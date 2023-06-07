@@ -18,7 +18,7 @@ const useCart = () => {
    const addCount = (id, price) => dispatch(cartAddCount(id, price))
 
    const restCount = (id, count, price) => {
-      count === 1 ? dispatch(cartDeleteItem(id)) : dispatch(cartRestCount(id, price));
+      count === 1 ? dispatch(cartDeleteItem(id, price)) : dispatch(cartRestCount(id, price));
    }
 
    return {

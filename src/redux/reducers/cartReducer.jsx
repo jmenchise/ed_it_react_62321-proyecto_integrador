@@ -17,7 +17,8 @@ export default (state = initialState, { type, payload }) => {
       case types.DELETE_ITEM:
          return {
             ...state,
-            cart: state.cart.filter((item) => item.id !== payload)
+            cart: state.cart.filter((item) => item.id !== payload.id),
+            total: Number(state.total) - payload.price
          }
 
       case types.ADD_COUNT:
