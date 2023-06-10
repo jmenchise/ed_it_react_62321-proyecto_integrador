@@ -5,7 +5,7 @@ import Details from '../pages/Details'
 import Cart from '../pages/Cart'
 import ProductsProvider from '../data/context/ProductsProvider'
 import { Provider } from 'react-redux'
-import store from '../redux/store';
+import { store } from '../app/store'
 
 const index = () => {
    return (
