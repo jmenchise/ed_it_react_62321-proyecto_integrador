@@ -4,10 +4,11 @@ import useCart from '../../hooks/useCart';
 
 const CartItem = (props) => {
    const { id, sizes, colors, count, price, title } = props;
-   const { addCount, restCount } = useCart();
+   const { addCount, restCount, removeItemFromCart } = useCart();
 
    return (
-      <div className="card mt-5 text-start w-75 m-auto border-dark pt-3" style={{ borderRadius: '2em' }}>
+      <div className="card mt-5 text-start w-75 m-auto border-dark pt-3 position-relative" style={{ borderRadius: '2em' }}>
+         <button onClick={() => removeItemFromCart({ id, count, price })} type="button" className="btn-close position-absolute top-0 end-0 mx-3 mt-2" aria-label="Close"></button>
          <h5 className="card-header bg-transparent border-0">{title}</h5>
          <div className="card-body">
             <p className="card-text">Talle: {sizes.join(' - ')} | Color: {colors.join(' - ')} </p>

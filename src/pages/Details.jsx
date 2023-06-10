@@ -5,22 +5,22 @@ import ItemDetails from '../components/ItemDetails/ItemDetails'
 import { useParams } from 'react-router-dom'
 import { Productscontext } from '../data/context/ProductsProvider'
 import useCart from '../hooks/useCart'
-import { itemExistInArr } from '../helpers'
+
 
 const Details = () => {
     const { id } = useParams();
     const { products } = useContext(Productscontext);
     const product = products.find(product => product.id === Number(id));
-    const { addItemtoCart } = useCart();
+    const { addItemToCart } = useCart();
 
     return (
         <div className='container container-fluid'>
             {<NavBar />}
             {<BackBtn />}
-            {itemExistInArr(Number(id), products) ?
+            {product ?
                 <ItemDetails
                     product={product}
-                    onClick={addItemtoCart}
+                    handleClick={addItemToCart}
                 />
             :
             <>

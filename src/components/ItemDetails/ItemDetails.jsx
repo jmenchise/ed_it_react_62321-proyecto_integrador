@@ -2,7 +2,7 @@ import React from 'react'
 
 
 const ItemDetails = (props) => {
-   const { product, onClick } = props;
+   const { product, handleClick } = props;
    const {
       sizes,
       colors,
@@ -30,7 +30,7 @@ const ItemDetails = (props) => {
          </ul>
          <div className='card-body'>
             <button
-               onClick={() => { onClick(product) }}
+               onClick={() => { handleClick(product) }}
                className='btn'
             >
                Lo Quiero!
