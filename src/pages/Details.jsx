@@ -3,13 +3,13 @@ import NavBar from '../components/NavBar/NavBar'
 import BackBtn from '../shared/BackBtn'
 import ItemDetails from '../components/ItemDetails/ItemDetails'
 import { useParams } from 'react-router-dom'
-import { Productscontext } from '../data/context/ProductsProvider'
+import { ProductsContext } from '../data/context/ProductsProvider'
 import useCart from '../hooks/useCart'
 
 
 const Details = () => {
     const { id } = useParams();
-    const { products } = useContext(Productscontext);
+    const { products } = useContext(ProductsContext);
     const product = products.find(product => product.id === Number(id));
     const { addItemToCart } = useCart();
 

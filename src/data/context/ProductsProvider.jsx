@@ -2,7 +2,7 @@ import React, { createContext } from 'react'
 import useProducts from '../../hooks/useProducts';
 
 
-export const Productscontext = createContext();
+export const ProductsContext = createContext();
 
 
 const ProductsProvider = ({ children }) => {
@@ -10,11 +10,11 @@ const ProductsProvider = ({ children }) => {
    const { products } = useProducts();
 
    return (
-      <Productscontext.Provider value={{
+      <ProductsContext.Provider value={{
          products
       }}>
          {children}
-      </Productscontext.Provider>
+      </ProductsContext.Provider>
    )
 }
 

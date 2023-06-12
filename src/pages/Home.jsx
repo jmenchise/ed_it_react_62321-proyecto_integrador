@@ -2,12 +2,12 @@ import React, { useContext } from 'react'
 import NavBar from '../components/NavBar/NavBar'
 import SearchForm from '../components/SearchForm/SearchForm'
 import ItemList from '../layouts/ItemList'
-import { Productscontext } from '../data/context/ProductsProvider'
+import { ProductsContext } from '../data/context/ProductsProvider'
 
 const Home = () => {
 
 
-    const { products } = useContext(Productscontext);
+    const { products } = useContext(ProductsContext);
 
     return (
         <div className='container container-fluid'>
